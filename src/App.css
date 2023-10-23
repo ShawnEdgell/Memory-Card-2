@@ -19,13 +19,30 @@ header {
 }
 
 .card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
     width: 150px;
-    padding: 10px;
-    transition: transform 0.3s;
+    height: 250px; 
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
 }
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
