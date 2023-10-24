@@ -1,7 +1,9 @@
+import headerImage from '../assets/RM.png';
+
 function Header() {
     return (
         <header>
-            <h1>Memory Card Game</h1>
+            <img id="header-logo" src={headerImage} alt="Header" />
         </header>
     );
 }

@@ -5,7 +5,9 @@ const Card = ({ character, onCardClick }) => {
     return (
         <div className="card" onClick={onCardClick}>
             <img src={character.image} alt={character.name} />
-            <h3>{character.name}</h3>
+            <div className="character-name">
+                <h4>{character.name}</h4>
+            </div>
         </div>
     );
 };
