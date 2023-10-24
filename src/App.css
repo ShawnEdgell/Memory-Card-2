@@ -2,12 +2,17 @@
     font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header {
     background-color: #f5f5f5;
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .card-grid {
@@ -20,12 +25,13 @@ header {
 
 .card {
     width: 150px;
-    height: 250px; 
+    height: 250px;
     overflow: hidden;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px; 
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card img {
@@ -35,14 +41,35 @@ header {
     margin: 0 auto;
 }
 
-
 .card:hover {
     transform: scale(1.05);
 }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003d7a;
 }
